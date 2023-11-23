@@ -4,9 +4,7 @@ function Header() {
     const currentPage = useLocation().pathname;
     
     return (
-        <Header>
-            <h1>Gabriel Rinaldi</h1>
-        </Header>
+            <h1>Gabriel Rinaldi</h1> 
     )
 }
 
