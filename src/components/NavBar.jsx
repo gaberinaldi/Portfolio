@@ -4,20 +4,24 @@ function NavBar() {
     const currentPage = useLocation().pathname;
     
     return (
-        <header>
+        
+        <header className='headerStyle'>
+          <h1 className='topName'><span className='arrow'>&lt;</span>/Gabriel<span className='arrow'>&gt;</span></h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link
             to="/"
-            className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === '/' ? 'nav-link active red-text' : 'nav-link'}
+            style={{color: 'white'}}
           >
-            About Me
+            Home
           </Link>
         </li>
         <li className="nav-item">
           <Link
             to="/Projects"
-            className={currentPage === '/Projects' ? 'nav-link active' : 'nav-link'}
+            className={currentPage === '/Projects' ? 'nav-link active red-text' : 'nav-link'}
+            style={{color: 'white'}}
           >
             Projects
           </Link>
@@ -25,13 +29,16 @@ function NavBar() {
         <li className="nav-item">
           <Link
             to="/Contact"
-            className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+            className= "removeLink"
+            className={currentPage === '/Contact' ? 'nav-link active red-text' : 'nav-link'}
+            style={{color: 'white'}}
           >
             Contact
           </Link>
         </li>
       </ul>
     </header>
+    
     );
 }
 

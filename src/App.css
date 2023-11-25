@@ -1,1 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    height: 1000px;
+}
+
+
+/* NavBar style */ 
+.headerStyle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    margin-bottom: 10px;
+   }
+
+.topName {
+    font-family: "Oswald", sans-serif;
+    color: white;
+    padding-left: 20px;
+    padding-bottom: 3px;
+    font-size: 30px;
+}
+
+.arrow {
+    color: red;
+}
+   
+   .nav {
+    display: flex;
+    justify-content: space-around;
+   }
+
+   .nav-item {
+    font-family: "Oswald", sans-serif;
+    padding-right: 30px ;
+    list-style: none;
+   }
+
+   .red-text {
+    color: red !important;
+   }
+
+/* Home style */ 
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+ }
+
+ .homeText { 
+    font-family: "Oswald", sans-serif;
+    width: 500px;
+    font-size: 24px;
+    padding-right: 25px;
+    border-bottom: 2px solid red;
+ }
+
+
+ .profile-pic {
+    padding-left: 25px;
+ }
+
+.profile-pic img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid black;
+    border-radius: 200px;
+    object-position: 50% 20%;
+}
+
+.firstName {
+    color: red;
+}
+
+.typewriter {
+    display: inline-block;
+}
+
+.effect {
+    border-right: 2px solid;
+    width: 100%;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(26),
+    cursor .6s step-end infinite alternate;
+    
+}
+
+@keyframes typing {
+    from { width: 0 }
+    100% { width: 100% }
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
