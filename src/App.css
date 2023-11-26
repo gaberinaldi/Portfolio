@@ -50,7 +50,6 @@ body {
 /* Footer style */
 
 .footerStyle {
-    
     width: 100%;
     position: absolute;    
     color: white;
@@ -60,7 +59,6 @@ body {
 .bottomName {
     font-family: "Oswald", sans-serif;
     color: white;
-    padding-left: 20px;
     font-size: 30px;
     text-align: center;
 }
@@ -73,8 +71,8 @@ body {
 
 .contactIcons {
     display: flex;
-    justify-content: space-evenly;
-    text-align: center;
+    justify-content: center;
+    gap: 30px;
     font-size: 30px;
     padding-top: 15px;
     padding-bottom: 10px;
@@ -204,7 +202,7 @@ body {
 }
 
 .icon-hover:hover {
-    transition: .4s ease-in-out;
+    transition: .5s ease-in-out;
     color: #ff1010;
     transform: translateY(-12px);
 }
