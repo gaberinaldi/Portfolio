@@ -184,7 +184,7 @@ body {
 }
 
 .skillsIcons {
-    display: flex;
+    display:flex;
     justify-content: space-around;
     text-align: center;
     padding-top: 50px;
@@ -210,13 +210,18 @@ body {
 /* Portfolio style */
 .allCards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-evenly;
+    gap: 100px;
     padding-top: 100px;
     padding-bottom: 100px;
+    padding-right: 150px;
+    padding-left: 150px;
 }
 
 .card {
-    border: 2px solid red;
+    border: 3px solid black;
 }
 
 .card-images {
@@ -232,6 +237,7 @@ body {
     background-color: rgb(60, 60, 60);
     text-align: center;
     color: white;
+    border-top: 2px solid red;
 }
 
 .card-text {
@@ -266,4 +272,13 @@ body {
     width: 100px;
     font-family: "Oswald", sans-serif;
     background-color: white;
+}
+
+.my-buttons:hover {
+    transition: .3s ease-in-out;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(50, 50, 50);
+    border: 2px solid red;
+    border-radius: 50px;
 }
