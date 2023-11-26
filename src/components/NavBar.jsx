@@ -19,11 +19,11 @@ function NavBar() {
         </li>
         <li className="nav-item">
           <Link
-            to="/Projects"
-            className={currentPage === '/Projects' ? 'nav-link active red-text' : 'nav-link'}
+            to="/Portfolio"
+            className={currentPage === '/Portfolio' ? 'nav-link active red-text' : 'nav-link'}
             style={{color: 'white'}}
           >
-            Projects
+            Portfolio
           </Link>
         </li>
         <li className="nav-item">
