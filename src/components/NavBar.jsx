@@ -6,7 +6,7 @@ function NavBar() {
     return (
         
         <header className='headerStyle'>
-          <h1 className='topName'><span className='arrow'>&lt;</span>/Gabriel<span className='arrow'>&gt;</span></h1>
+          <h1 className='topName'><span className='arrow'>&lt;</span>Gabriel<span className='arrow'>&gt;</span></h1>
       <ul className="nav nav-tabs">
         <li className="nav-item">
           <Link
@@ -29,7 +29,6 @@ function NavBar() {
         <li className="nav-item">
           <Link
             to="/Contact"
-            className= "removeLink"
             className={currentPage === '/Contact' ? 'nav-link active red-text' : 'nav-link'}
             style={{color: 'white'}}
           >
