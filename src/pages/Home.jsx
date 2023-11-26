@@ -1,3 +1,6 @@
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaBootstrap, FaGithub } from "react-icons/fa";
+import { IconContext } from "react-icons";
+
 export default function Home() {
     return (
         <div className="about">
@@ -20,10 +23,26 @@ export default function Home() {
                     <img src="src/images/cartoon.png" />
                     </div>
                     <div className="bioText">
-                        <h1>About me</h1>
+                        <h1>About <span className="bioTitle">me</span></h1>
                         <p>I grew up in a small town in California known as Vacaville, where I spent my childhood building computers and learning everything I could about them. During the summer of 2023 I decided to finally pursue a career in tech, I enrolled in the University of California, Davis Full Stack Development program. Since then, I was offered a job as a Nintendo Brand Ambassador in Salt Lake City, where myself, my beautiful girlfriend, and 3 year old German Shepherd Dakota now reside. I've been coding for less then a year, but have no doubt that my current skillset and passion for learning will make me a beneficial member to any development team.   </p>
                         </div>
                 </div>
+            <div className="skills">
+                <div className="skillsTitle">
+                    <h1>Technologies</h1>
+                    </div>
+                    <div className="skillsIcons">
+                    <IconContext.Provider value={{ className: "icon-hover" }}>
+ <FaHtml5 />
+ <FaCss3Alt />
+ <FaJsSquare />
+ <FaReact />
+ <FaNodeJs />
+ <FaBootstrap />
+ <FaGithub />
+</IconContext.Provider>
+                        </div>
+                </div>    
         </div>
     );
 };
