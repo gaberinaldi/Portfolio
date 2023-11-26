@@ -202,7 +202,7 @@ body {
 }
 
 .icon-hover:hover {
-    transition: .5s ease-in-out;
+    transition: .4s ease-in-out;
     color: #ff1010;
     transform: translateY(-12px);
 }
