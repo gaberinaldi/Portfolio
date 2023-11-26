@@ -7,7 +7,7 @@ function Footer() {
     
     return (
         <footer className='footerStyle'>
-            {/* <p><h1 className='bottomName'><span className='arrow'>&lt;</span>/Gabriel<span className='arrow'>&gt;</span></h1></p> */}
+            <p><h1 className='bottomName'><span className='arrow'>&lt;</span>/Gabriel<span className='arrow'>&gt;</span></h1></p>
         </footer> 
     );
 }

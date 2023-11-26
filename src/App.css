@@ -49,10 +49,8 @@ body {
 
 /* Footer style */
 
-/*
 .footerStyle {
-    position: sticky;
-    top: 100%;
+    
     width: 100%;
     position: absolute;    
     color: white;
@@ -67,7 +65,7 @@ body {
     font-size: 30px;
     text-align: center;
 }
-*/
+
 /* Home style */ 
 
 .about {
