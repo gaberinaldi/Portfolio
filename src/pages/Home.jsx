@@ -15,7 +15,7 @@ export default function Home() {
             </p>
             </div>
             <div className="profile-pic">
-                <img src="src/images/avi.png" alt="Gabriel Rinaldi" />
+                <img src="src/images/avi.png" />
             </div>
             </div>
             <div className="bio">
