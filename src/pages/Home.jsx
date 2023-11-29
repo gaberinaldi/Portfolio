@@ -15,12 +15,12 @@ export default function Home() {
             </p>
             </div>
             <div className="profile-pic">
-                <img src="src/images/avi.png" />
+                <img src="../images/avi.png" />
             </div>
             </div>
             <div className="bio">
                 <div className="bioPic">
-                    <img src="src/images/cartoon.png" />
+                    <img src="../images/cartoon.png" />
                     </div>
                     <div className="bioText">
                         <h1>About <span className="bioTitle">me</span></h1>
