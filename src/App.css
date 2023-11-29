@@ -17,7 +17,6 @@ body {
     justify-content: space-between;
     align-items: center;
     background-color: rgb(25, 25, 25);
-    margin-bottom: 10px;
    }
 
 .topName {
@@ -95,7 +94,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 80px;
+    padding-top: 150px;
  }
 
  .profile-home {
@@ -237,7 +236,7 @@ body {
     background-color: rgb(60, 60, 60);
     text-align: center;
     color: white;
-    border-top: 2px solid red;
+    border-top: 2px solid black;
 }
 
 .card-text {
@@ -281,4 +280,110 @@ body {
     background-color: rgb(50, 50, 50);
     border: 2px solid red;
     border-radius: 50px;
+}
+
+/* Contact style */
+
+.contact-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9), rgb(255, 0, 0, 0.7));
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: rgb(40, 40, 40);
+    border: 3px solid black;
+    border-radius: 20px;
+    width: 700px;
+    height: 800px;
+    padding-bottom: 10px;
+}
+
+.contact-me {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: white;
+    border-bottom: 2px solid red;
+    width: 400px;
+    padding-bottom: 10px;
+}
+
+.name-box {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+.name-box:hover {
+    transition: .3s ease-in-out;
+    background-color: white;
+    color: black;
+}
+
+.email-box {
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+.email-box:hover {
+    transition: .3s ease-in-out;
+    background-color: white;
+    color: black;
+}
+
+.message-box {
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 25px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    
+}
+
+.message-box:hover {
+    transition: .3s ease-in-out;
+    background-color: white;
+    color: black;
+}
+
+.submit {
+    width: 100px;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.submit:hover {
+    transition: .4s ease-in-out;
+    transform: scale(1.2);
 }
