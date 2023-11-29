@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import weather from "../images/Weather.png";
-import quiz from "../images/quiz.png";
+import quiz from "../images/Quiz.png";
 import soon from "../images/soon.jpg";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
