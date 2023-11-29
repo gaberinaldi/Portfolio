@@ -2,7 +2,7 @@
 
 ## Description
 
-This project means a lot to me. I'm nearing the end of my University of California, Davis Development Bootcamp and this is my first big project on my own. This project is just a small fraction of everything I was able to learn and accomplish in a short duration of time. I have no doubt my skillset will continue to grow exponentially over the upcoming months. I made this portfolio to show my current skillset and also to present upcoming projects I will be working on upon completion. This project will allow future employers and clients to learn more about me, my style, and my work.
+This project means a lot to me. I'm nearing the end of my University of California, Davis Bootcamp and this is my first portfolio I've put real time and dedication into. This project is just a small fraction of everything I was able to learn and accomplish in a short duration of time. I have no doubt my skillset will continue to grow exponentially over the upcoming months. I made this portfolio to show my current skillset and also to present upcoming projects I will be working on upon completion. This project will allow future employers and clients to learn more about me, my style, and my work.
 
 This application was built using:
 
