@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import weather from "../images/weather.png";
+import weather from "../images/Weather.png";
 import quiz from "../images/quiz.png";
 import soon from "../images/soon.jpg";
 import Button from 'react-bootstrap/Button';
