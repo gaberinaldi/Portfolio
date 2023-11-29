@@ -4,8 +4,7 @@ import { useState } from 'react';
 export default function Contact() {
 
 
-const [firstName, setFirstName] = useState("");
-const [lastName, setLastName] = useState("");
+const [name, setName] = useState("");
 const [email, setEmail] = useState("");
 const [message, setMessage] = useState("");
 
@@ -14,10 +13,8 @@ const handleInputChange = (e) => {
   const inputType = target.name;
   const inputValue = target.value;
 
-  if (inputType === 'firstName') {
-    setFirstName(inputValue);
-  } else if (inputType === 'lastName') {
-    setLastName(inputValue);
+  if (inputType === 'name') {
+    setName(inputValue);
   } else if (inputType === 'email') {
     setEmail(inputValue);
   } else {
@@ -29,48 +26,45 @@ const handleFormSubmit = (e) => {
   e.preventDefault();
 
   const info = {
-    firstName: firstName,
-    lastName: lastName,
+    name: name,
     email: email, 
     message: message
   }
   console.log(info);
-  setFirstName('');
-  setLastName('');
+  setName('');
   setEmail('');
   setMessage('');
 };
 
   return (
-    <div>
+    <div className='contact-page'>
       <form className="form" onSubmit={handleFormSubmit}>
+        <h1 className='contact-me'>Contact Me</h1>
         <input
-        value={firstName}
-        name='firstName'
+        className='name-box'
+        value={name}
+        name='name'
         onChange={handleInputChange}
         type="text"
-        placeholder="First Name"
+        placeholder="Name:"
         />
         <input
-        value={lastName}
-        name='lastName's
-        onChange={handleInputChange}
-        type="text"
-        placeholder="Last Name"
-        />
-        <input
+        className='email-box'
         value={email}
         name='email'
         onChange={handleInputChange}
         type="email"
-        placeholder="Email"
+        placeholder="Email:"
         />
         <textarea
+        className='message-box'
         value={message}
         onChange={handleInputChange}
         type="text"
         name='message'
-        placeholder="Enter Message Here"
+        placeholder="Enter Message Here..."
+        cols={40}
+        rows={5}
         id="messageBox"
         ></textarea>
         <button type="submit" className='submit'>Submit</button>
