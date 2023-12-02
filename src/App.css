@@ -292,7 +292,9 @@ body {
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 50px;
-    
+    background-image: url("src/images/gps.png");
+    background-size: cover ;
+    background-position: center;
 }
 
 .form {

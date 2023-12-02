@@ -1,5 +1,7 @@
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaBootstrap, FaGithub } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import avi from "../images/avi.png";
+import cartoon from "../images/cartoon.png";
 
 export default function Home() {
     return (
@@ -15,12 +17,12 @@ export default function Home() {
             </p>
             </div>
             <div className="profile-pic">
-                <img src="src/images/avi.png" />
+            <img src={avi} />
             </div>
             </div>
             <div className="bio">
                 <div className="bioPic">
-                    <img src="src/images/cartoon.png" />
+                    <img src={cartoon} />
                     </div>
                     <div className="bioText">
                         <h1>About <span className="bioTitle">me</span></h1>
