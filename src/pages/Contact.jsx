@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import gps from "../images/Weather.png";
 
 
 export default function Contact() {
