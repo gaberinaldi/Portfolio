@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import weather from "../images/Weather.png";
-import quiz from "../images/Quiz.png";
+import companyDB from "../images/CompanyDB.png";
+import planner from "../images/Planner.png";
 import soon from "../images/soon.jpg";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
@@ -15,18 +16,18 @@ const projectData = [
       github: 'https://github.com/gaberinaldi/Weather-Forecast'
     },
     {
-      name:  'Coding Quiz',
-      imgSrc: quiz,
-      description: 'Welcome to my JavaScript Quiz Website! This platform is designed to test your knowledge of JavaScript and improve your skills. The website presents a series of JavaScript questions, one at a time, and keeps track of your score. Your score is updated in real-time as you answer each question.',
-      url: 'https://gaberinaldi.github.io/Coding-Quiz/',
-      github: 'https://github.com/gaberinaldi/Coding-Quiz'
+      name:  'Company Database Manager',
+      imgSrc: companyDB,
+      description: "This company database manager is the perfect way to track and update departments, roles, and employees. It's the solution to a problem many companies face and will allow you to view update and add info in a matter of seconds.",
+      url: 'https://github.com/gaberinaldi/Company-Database-Manager',
+      github: 'https://github.com/gaberinaldi/Company-Database-Manager'
     },
     {
-      name: 'Coming soon...',
-      imgSrc: soon,
-      description: 'Coming soon...',
-      url: 'https://github.com/gaberinaldi',
-      github: 'https://github.com/gaberinaldi'
+      name: 'Daily Planner',
+      imgSrc: planner,
+      description: 'Daily Planner is a web application designed to help users manage their daily tasks by tracking their past, present, and future activities. This application is built to provide a simple and intuitive interface for users to plan their day-to-day activities and keep track of their progress.',
+      url: 'https://gaberinaldi.github.io/Daily-Planner-5/',
+      github: 'https://github.com/gaberinaldi/Daily-Planner-5'
     },
     {
       name: 'Coming soon...',
