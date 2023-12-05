@@ -181,8 +181,13 @@ body > #root > div {
     white-space: nowrap;
     overflow: hidden;
     animation: typing 2.5s steps(26),
-    cursor .6s step-end infinite alternate;
-    
+    cursor .6s step-end infinite alternate;   
+}
+
+@media (max-width: 600px) {
+    .effect {
+        letter-spacing: 0px;
+    }
 }
 
 .bio {
