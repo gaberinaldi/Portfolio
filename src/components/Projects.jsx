@@ -2,7 +2,6 @@ import { Link, useLocation } from "react-router-dom";
 import weather from "../images/Weather.png";
 import companyDB from "../images/CompanyDB.png";
 import planner from "../images/Planner.png";
-import soon from "../images/soon.jpg";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
@@ -28,13 +27,6 @@ const projectData = [
       description: 'Daily Planner is a web application designed to help users manage their daily tasks by tracking their past, present, and future activities. This application is built to provide a simple and intuitive interface for users to plan their day-to-day activities and keep track of their progress.',
       url: 'https://gaberinaldi.github.io/Daily-Planner-5/',
       github: 'https://github.com/gaberinaldi/Daily-Planner-5'
-    },
-    {
-      name: 'Coming soon...',
-      imgSrc: soon,
-      description: 'Coming soon...',
-      url: 'https://github.com/gaberinaldi',
-      github: 'https://github.com/gaberinaldi'
     },
   ];
   
