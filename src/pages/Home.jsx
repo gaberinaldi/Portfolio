@@ -12,7 +12,7 @@ export default function Home() {
             <div className="typewriter">
             <h1 className="effect">my name is <span className="firstName">Gabriel</span> Rinaldi</h1>
             </div>
-            <p className="homeBio">
+            <p>
                 I'm a motivated 21 year old Front-End Developer based in Salt Lake City, UT. &#128205;
             </p>
             </div>
