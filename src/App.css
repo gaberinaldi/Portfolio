@@ -185,6 +185,12 @@ body > #root > div {
     
 }
 
+@media (max-width: 600px) {
+    .effect {
+        letter-spacing: 0px;
+    }
+}
+
 .bio {
     display: flex;
     justify-content: center;
