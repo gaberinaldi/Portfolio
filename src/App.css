@@ -130,8 +130,8 @@ body > #root > div {
 
  @media (max-width: 600px) {
     .homeText {
-        width: 55%;
-        font-size: 22px;
+        width: 50%;
+        font-size: 20px;
         height: 100%;
         padding-top: 150px;
         padding-left: 20px;
@@ -231,7 +231,7 @@ body > #root > div {
 @media (max-width: 600px) {
     .bioText {
         width: 50%;
-        font-size: 22px;
+        font-size: 20px;
         height: 100%;
 
     }
