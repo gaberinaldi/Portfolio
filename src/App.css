@@ -134,7 +134,12 @@ body > #root > div {
         font-size: 19px;
         height: 100%;
         padding-top: 150px;
-        padding-left: 20px;
+    }
+}
+
+ @media (max-width: 600px) {
+    .homeBio {
+        width: 100%;
     }
 }
 
