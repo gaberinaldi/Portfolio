@@ -1,65 +1,39 @@
-import { useState } from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
+const Contact = () => {
+  const form = useRef();
 
-export default function Contact() {
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-
-const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [message, setMessage] = useState("");
-
-const handleInputChange = (e) => {
-  const { target } = e;
-  const inputType = target.name;
-  const inputValue = target.value;
-
-  if (inputType === 'name') {
-    setName(inputValue);
-  } else if (inputType === 'email') {
-    setEmail(inputValue);
-  } else {
-    setMessage(inputValue);
-  }
-};
-
-const handleFormSubmit = (e) => {
-  e.preventDefault();
-
-  const info = {
-    name: name,
-    email: email, 
-    message: message
-  }
-  console.log(info);
-  setName('');
-  setEmail('');
-  setMessage('');
-};
-
+    emailjs.sendForm('service_gvewz4x', 'template_503qn5t', form.current, 'jeqa-MAI-ifyRpIUT')
+      .then((result) => {
+          console.log(result.text);
+          console.log("message sent");
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+ 
   return (
     <div className='contact-page'>
-      <form className="form" onSubmit={handleFormSubmit}>
+      <form className="form" ref={form} onSubmit={sendEmail}>
         <h1 className='contact-me'>Contact Me</h1>
         <input
         className='name-box'
-        value={name}
-        name='name'
-        onChange={handleInputChange}
+        name='user_name'
         type="text"
         placeholder="Name:"
         />
         <input
         className='email-box'
-        value={email}
-        name='email'
-        onChange={handleInputChange}
+        name='user_email'
         type="email"
         placeholder="Email:"
         />
         <textarea
         className='message-box'
-        value={message}
-        onChange={handleInputChange}
         type="text"
         name='message'
         placeholder="Enter Message Here..."
@@ -67,8 +41,10 @@ const handleFormSubmit = (e) => {
         rows={5}
         id="messageBox"
         ></textarea>
-        <button type="submit" className='submit'>Submit</button>
+        <button type="submit" className='submit' value="send" >Submit</button>
       </form>
     </div>
   );
 }
+
+export default Contact;
